@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Test POC</title>
+</head>
+<body style="text-align: center; font-family: sans-serif; padding-top: 50px;">
+    <div style="background-color: yellow; border: 2px solid red; padding: 20px;">
+        <h1 style="color: red;">HTML Injection Confirmed</h1>
+        <p>This content was injected via a file upload vulnerability and source file loaded from github.</p>
+    </div>
+    <hr>
+    <script>
+        // Shows a popup with the domain name
+        alert("XSS Triggered!\nDomain: " + document.domain);
+        // Logs a message to the browser console
+        console.log("JavaScript executed from the server.");
+    </script>
+</body>
+</html>
